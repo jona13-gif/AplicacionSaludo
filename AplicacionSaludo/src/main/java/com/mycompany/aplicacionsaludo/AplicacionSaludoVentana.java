@@ -43,8 +43,8 @@ public class AplicacionSaludoVentana extends javax.swing.JFrame {
         jLabel2.setText("INGRESE SU NOMBRE:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, -1));
 
-        txtNombre.setText("ingrese");
-        getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, -1, -1));
+        txtNombre.setText("nombre");
+        getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, -1, -1));
 
         btnSaludar.setText("SALUDAR");
         btnSaludar.addActionListener(this::btnSaludarActionPerformed);
