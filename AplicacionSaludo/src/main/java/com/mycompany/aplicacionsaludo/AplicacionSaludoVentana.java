@@ -28,21 +28,40 @@ public class AplicacionSaludoVentana extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        txtNombre = new javax.swing.JTextField();
+        btnSaludar = new javax.swing.JButton();
+        lblResultado = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setText("APLICACIÓN DE SALUDO");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, -1, -1));
+
+        jLabel2.setText("INGRESE SU NOMBRE:");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, -1));
+
+        txtNombre.setText("ingrese");
+        getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, -1, -1));
+
+        btnSaludar.setText("SALUDAR");
+        btnSaludar.addActionListener(this::btnSaludarActionPerformed);
+        getContentPane().add(btnSaludar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, -1, -1));
+
+        lblResultado.setText("Aquí aparecerá el saludo");
+        getContentPane().add(lblResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnSaludarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaludarActionPerformed
+        // TODO add your handling code here:
+        String nombre = txtNombre.getText();  //lee eltexto que ingrese el usuario
+
+        lblResultado.setText("Hola, " + nombre + "!"); //luego muestra ek nombre ingresado y da el saludo al usuario
+    }//GEN-LAST:event_btnSaludarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -70,5 +89,10 @@ public class AplicacionSaludoVentana extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnSaludar;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel lblResultado;
+    private javax.swing.JTextField txtNombre;
     // End of variables declaration//GEN-END:variables
 }
