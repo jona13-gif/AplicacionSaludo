@@ -28,30 +28,72 @@ public class AplicacionSaludoVentana extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         txtNombre = new javax.swing.JTextField();
         btnSaludar = new javax.swing.JButton();
         lblResultado = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+
+        jLabel5.setText("jLabel5");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("APLICACIÓN DE SALUDO");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, -1, -1));
+        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel1.setText("PROGRAMA SOFTWARE V CONTROL DE VERSIONES GIT HUB DESKTOP");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, -1, -1));
 
-        jLabel2.setText("INGRESE SU NOMBRE:");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, -1));
+        jLabel2.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel2.setText("!NO TE RINDAS¡");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 140, 120, 20));
 
         txtNombre.setText("nombre");
-        getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, -1, -1));
+        getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 80, 310, 30));
 
+        btnSaludar.setBackground(new java.awt.Color(102, 102, 102));
+        btnSaludar.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
+        btnSaludar.setForeground(new java.awt.Color(255, 255, 255));
         btnSaludar.setText("SALUDAR");
         btnSaludar.addActionListener(this::btnSaludarActionPerformed);
-        getContentPane().add(btnSaludar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, -1, -1));
+        getContentPane().add(btnSaludar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 240, 70));
 
+        lblResultado.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        lblResultado.setForeground(new java.awt.Color(255, 51, 204));
         lblResultado.setText("Aquí aparecerá el saludo");
-        getContentPane().add(lblResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, -1, -1));
+        getContentPane().add(lblResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 210, 70));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 530, 410));
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel4.setText("APLICACIÓN DE SALUDO");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, -1, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 530, 410));
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel7.setText("INGRESE SU NOMBRE:");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel8.setText("FELIZ DIA!");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 80, -1));
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 153, 153));
+        jLabel9.setText("HOLA!");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 180, 80, 20));
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 153, 255));
+        jLabel10.setText("¡BUENA SUERTE!");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 120, 20));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -60,7 +102,7 @@ public class AplicacionSaludoVentana extends javax.swing.JFrame {
         // TODO add your handling code here:
         String nombre = txtNombre.getText();  //lee eltexto que ingrese el usuario
 
-        lblResultado.setText("Hola, " + nombre + "!"); //luego muestra ek nombre ingresado y da el saludo al usuario
+        lblResultado.setText("Hola, " + nombre + " hoy es tu dia!"); //luego muestra ek nombre ingresado y da el saludo al usuario
     }//GEN-LAST:event_btnSaludarActionPerformed
 
     /**
@@ -91,7 +133,15 @@ public class AplicacionSaludoVentana extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSaludar;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel lblResultado;
     private javax.swing.JTextField txtNombre;
     // End of variables declaration//GEN-END:variables
