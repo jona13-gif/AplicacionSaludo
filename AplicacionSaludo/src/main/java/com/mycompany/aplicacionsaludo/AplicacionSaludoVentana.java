@@ -68,7 +68,7 @@ public class AplicacionSaludoVentana extends javax.swing.JFrame {
 
         lblResultado.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         lblResultado.setForeground(new java.awt.Color(255, 51, 204));
-        lblResultado.setText("Aquí aparecerá el saludo");
+        lblResultado.setText("!Aquí aparecerá el saludo¡");
         getContentPane().add(lblResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 210, 70));
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 530, 410));
 
