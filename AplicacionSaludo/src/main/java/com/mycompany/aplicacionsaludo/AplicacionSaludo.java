@@ -10,7 +10,7 @@ package com.mycompany.aplicacionsaludo;
  */
 public class AplicacionSaludo {
      public static void main(String args[]) { //main que muestra la venta del saludo
-         java.awt.EventQueue.invokeLater(() -> new AplicacionSaludoVentana().setVisible(true));
+         java.awt.EventQueue.invokeLater(() -> new AplicacionSaludoVentana().setVisible(true));//llamado a la ventana de saludo
      }
     
     }
