@@ -107,6 +107,7 @@ public class AplicacionSaludoVentana extends javax.swing.JFrame {
             lblResultado.setText("Ingrese un nombre válido. No se permiten números.");
             return;
         }
+        
         //opciones de mensaje que recibe la persona
         String[] mensajes = {
             "¡Que tengas un excelente día!",
