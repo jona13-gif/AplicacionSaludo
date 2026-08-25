@@ -116,7 +116,7 @@ public class AplicacionSaludoVentana extends javax.swing.JFrame {
             "¡Que tengas un día lleno de cosas buenas!",
             "¡Disfruta mucho tu día!"
         };
-
+        
         int mensaje = (int) (Math.random() * mensajes.length);
 
         lblResultado.setText("Hola, " + nombre + ". " + mensajes[mensaje]);//luego muestra el nombre ingresado y da el saludo al usuario
