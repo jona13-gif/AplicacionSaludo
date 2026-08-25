@@ -60,6 +60,7 @@ public class AplicacionSaludoVentana extends javax.swing.JFrame {
         btnSaludar.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         btnSaludar.setForeground(new java.awt.Color(255, 255, 255));
         btnSaludar.setText("SALUDAR");
+        btnSaludar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnSaludar.addActionListener(this::btnSaludarActionPerformed);
         getContentPane().add(btnSaludar, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, 160, 40));
 
